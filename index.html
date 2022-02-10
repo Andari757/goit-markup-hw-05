@@ -26,8 +26,8 @@
             ><span class="logo-part1">Web</span><span class="logo-part2">Studio</span></a
           >
           <ul class="list nav-list">
-            <li class="nav-item">
-              <a class="nav-link link current" href="./index.html">Студия</a>
+            <li class="nav-item current">
+              <a class="nav-link link" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="./portfolio.html">Портфолио</a>
@@ -62,7 +62,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="cta" type="button">Заказать услугу</button>
+          <button data-modal-open class="cta" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -123,6 +123,7 @@
           <h2 class="section-title title">Чем мы занимаемся</h2>
           <ul class="list skills-list">
             <li class="skill">
+              <div class="skill-desc">десктопные приложения</div>
               <img
                 class="img"
                 src="./images/whatarewe1.jpg"
@@ -132,6 +133,7 @@
               />
             </li>
             <li class="skill">
+              <div class="skill-desc">Мобильные приложения</div>
               <img
                 class="img"
                 src="./images/whatarewe2.jpg"
@@ -141,6 +143,7 @@
               />
             </li>
             <li class="skill">
+              <div class="skill-desc">Дизайнерские решения</div>
               <img
                 class="img"
                 src="./images/whatarewe3.jpg"
@@ -443,5 +446,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button data-modal-close type="button" class="close">
+          <svg class="x">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
